@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+h1, h2 {
+    margin: 1rem;
+}
+
+.scoreboard {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 1rem auto;
+    max-width: 450px;
+}
+
+.btn {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.green { background-color: green; }
+.red { background-color: red; }
+.yellow { background-color: yellow; }
+.purple { background-color: purple; }
+
+.flash {
+    background-color: white !important;
+    transform: scale(1.1);
+}
+
+.userFlash {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.game-over {
+    animation: blink 0.5s ease infinite;
+}
+
+@keyframes blink {
+    0%, 100% { background-color: red; }
+    50% { background-color: white; }
+}
